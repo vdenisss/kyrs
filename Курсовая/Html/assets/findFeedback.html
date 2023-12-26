@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="scripts/script.js" ></script>
+    <script type="text/javascript" src="scripts/createScript.js" ></script>
+    <link rel="stylesheet" href="styles/findFeedback.css" type="text/css">
+</head>
+<body>
+    <div>
+        <h1>Поиск отзывов</h1>
+    </div>
+    <div class="div-input">
+        <div>
+            <div class="title">Имя клиента</div>
+            <input class="input" type="text" id="name" required>
+        </div>
+        <div class="div-address">
+            <div class="title">Адрес клиента</div>
+            <button class="address-input" type="button" id="address" onclick="showWindow()"></button>
+        </div>
+    </div>
+    <div class="div-feedbacks">
+        <table>
+            <tr>
+               <button type="button" class="feedback" onclick="someoneFeedback()">
+                   <div class="icon">
+                       <img src="images/chat.png">
+                   </div>
+                   <div class="data">
+                       <div class="name">Денис</div>
+                       <div class="address">
+                           <div class="street">ул. Ленина, 54к6</div>
+                           <div class="numberApps">кв.42</div>
+                       </div>
+                   </div>
+                   <div class="stars">
+                       <img class="star" src="images/fullStar.png">
+                       <img class="star" src="images/fullStar.png">
+                       <img class="star" src="images/fullStar.png">
+                       <img class="star" src="images/fullStar.png">
+                       <img class="star" src="images/fullStar.png">
+                   </div>
+               </button>
+           </tr>
+           <tr>
+            <button type="button" class="feedback" onclick="someoneFeedback()">
+                <div class="icon">
+                    <img src="images/chat.png">
+                </div>
+                <div class="data">
+                    <div class="name">Денис</div>
+                    <div class="address">
+                        <div class="street">ул. Ленина, 54к6</div>
+                        <div class="numberApps">кв.42</div>
+                    </div>
+                </div>
+                <div class="stars">
+                    <img class="star" src="images/fullStar.png">
+                    <img class="star" src="images/fullStar.png">
+                    <img class="star" src="images/fullStar.png">
+                    <img class="star" src="images/fullStar.png">
+                    <img class="star" src="images/fullStar.png">
+                </div>
+            </button>
+            </tr>
+            <tr>
+                <button type="button" class="feedback" onclick="someoneFeedback()">
+                    <div class="icon">
+                        <img src="images/chat.png">
+                    </div>
+                    <div class="data">
+                        <div class="name">Денис</div>
+                        <div class="address">
+                            <div class="street">ул. Ленина, 54к6</div>
+                            <div class="numberApps">кв.42</div>
+                        </div>
+                    </div>
+                    <div class="stars">
+                        <img class="star" src="images/fullStar.png">
+                        <img class="star" src="images/fullStar.png">
+                        <img class="star" src="images/fullStar.png">
+                        <img class="star" src="images/fullStar.png">
+                        <img class="star" src="images/fullStar.png">
+                    </div>
+                </button>
+       </table>
+    </div>
+    <div class="buttons">
+        <button type="button" class="button" onclick="">Поиск</button>
+        <button type="button" class="button" onclick="javascript:history.back()">Назад</button>
+    </div>
+    <div class="font-window-input" id="window">
+        <a href="javascript:closeWindow();" class="a"></a>
+        <div class="window-input">
+            <div class="div-input-window">
+                <div class="div-input">
+                    <div class="title">Город</div>
+                    <input class="input" type="city" id="city" value="" required>
+                </div>
+                <div class="div-input">
+                    <div class="title">Улица</div>
+                    <input class="input" type="street" id="street" value="" required>
+                </div>
+                <div class="div-input">
+                    <div class="title">Номер дома</div>
+                    <input class="input" type="numberHouse" id="numberHouse" value="" required>
+                </div>
+                <div class="div-input">
+                    <div class="title">Номер квартиры</div>
+                    <input class="input" type="numberFlat" id="numberFlat" value="" required>
+                </div>
+            </div>
+            <div class="add-button">
+                <button id="addAddress" class="button" type="button" onclick="addAddressWithFlat()">Добавить</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

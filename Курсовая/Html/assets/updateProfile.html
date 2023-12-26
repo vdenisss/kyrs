@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="scripts/script.js" ></script>
+    <link rel="stylesheet" href="styles/updateProfileStyles.css" type="text/css">
+</head>
+<body onload="dataUpdateProfile()">
+    <div>
+        <h1>Редактирование профиля</h1>
+    </div>
+    <div class="div-input">
+        <div class="name-input">Имя</div>
+        <input type="text" id="name" value="" required>
+    </div>
+    <div class="div-input">
+        <div class="name-input">Фамилия</div>
+        <input type="text" id="lastName" value="" required>
+    </div>
+    <!--<div class="div-input">
+        <div class="name-input">Отчество</div>
+        <input type="text" id="patronymic" value="" required>
+    </div>-->
+    <div class="div-input">
+        <div class="name-input">Номер телефона</div>
+        <input type="number" id="phoneNumber" value="" required>
+    </div>
+    <!--<div class="div-select-name">
+        <div class="name-input">Роль</div>
+        <div class="div-select">
+            <select type="text" id="Role" required>
+                <option value="Курьер">Курьер</option>
+                <option value="Модератор">Модератор</option>
+            </select>
+        </div>
+    </div>-->
+    <div class="div-button">
+        <button type="button" onclick="save()">Сохранить</button>
+        <div class="back">
+            <button onclick="javascript:history.back()" type="button">Назад</button>
+        </div>
+    </div>
+</body>
+</html>

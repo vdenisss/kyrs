@@ -1,0 +1,11 @@
+body{
+    font-family: Open Sans;
+    margin: 0;
+}
+
+h1 {
+    font-size: 30px;
+    color: black;
+    text-align: center;
+    margin-top: 50px;
+}

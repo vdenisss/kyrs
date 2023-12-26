@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="scripts/script.js" ></script>
+    <link rel="stylesheet" href="styles/feedback.css" type="text/css">
+</head>
+<body onload="dataFeedback()">
+    <h1>Отзыв</h1>
+    <div class="div-address">
+        <div class="div-address-city">
+            <div class="title" id="clientAddress">Адрес клиента</div>
+            <div class="value" id="addressValue"></div>
+        </div>
+        <div class="div-details">
+            <div class="detalis">
+                <div class="title">Подъезд</div>
+                <div class="value" id="entrance"></div>
+            </div>
+            <div class="detalis">
+                <div class="title">Домофон</div>
+                <div class="value" id="doorNumber"></div>
+            </div>
+            <div class="detalis">
+                <div class="title">Этаж</div>
+                <div class="value" id="floor"></div>
+            </div>
+            <div class="detalis">
+                <div class="title">Квартира</div>
+                <div class="value" id="flat"></div>
+            </div>
+        </div>
+    </div>
+    <div class="div-name">
+        <div class="title">Имя клиента</div>
+        <div class="value" id="nameClient"></div>
+    </div>
+    <div class="div-comment">
+        <div class="title">Комментарий</div>
+        <div class="value" id="comment"></div>
+    </div>
+    <div class="stars" id="stars">
+        <!--<img class="star" src="images/fullStar.png">
+        <img class="star" src="images/fullStar.png">
+        <img class="star" src="images/fullStar.png">
+        <img class="star" src="images/fullStar.png">
+        <img class="star" src="images/fullStar.png">-->
+    </div>
+    <div class="buttons">
+        <button type="button" class="button" onclick="updateFeedback()">Редактивровать отзыв</button>
+        <button type="button" class="button" onclick="deleteFeedback()">Удалить отзыв</button>
+        <button type="button" class="button" onclick="myFeedback()">Назад</button>
+    </div>
+</body>
+</html>

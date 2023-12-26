@@ -1,0 +1,79 @@
+body{
+    font-family: Open Sans;
+    margin: 0;
+}
+
+h1 {
+    font-size: 30px;
+    color: black;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.div-address{
+    margin-top: 60px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.title{
+    font-size: 14px;
+    color: #9a9a9a;
+}
+
+.value{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 3px;
+}
+
+.div-details{
+    display: flex;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.detalis{
+    margin-right: 40px;
+}
+
+.div-name{
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+.div-comment{
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.stars{
+    display: block;
+    text-align: center;
+    margin-top: 50px;
+
+}
+
+.star{
+    margin-left: 10px;
+}
+
+.buttons{
+    margin-top: 6vh;
+}
+
+.button{
+    display: block;
+    margin: auto auto;
+    width: 70%;
+    height: 50px;
+    border-radius: 45px;
+    background-color: #000;
+    color: #FFF;
+    margin-bottom: 10px;
+}
+
+.someone-buttons{
+    margin-top: 12vh;
+}

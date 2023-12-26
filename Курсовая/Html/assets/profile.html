@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="scripts/script.js" ></script>
+    <link rel="stylesheet" href="styles/profileStyles.css" type="text/css">
+</head>
+<body onload="dataProfile()">
+    <div class="orange-block">
+        <h1 class="h1-profile">Профиль</h1>
+        <div>
+            <img class="image" src="images/logo.png"/>
+        </div>
+        <h1 class="h1-name" id="nameUser"></h1>
+        <div class="div-role" id="roleUser"></div>
+    </div>
+    <div class="div-button-profile">
+        <div id="updateProfile">
+            <button class="button-profile" onclick="updateProfile()">Редактировать профиль</button>
+        </div>
+        <div id="createFeedback">
+            <button class="button-profile" onclick="createFeedback()">Создать отзыв</button>
+        </div>
+        <!--<div>
+            <button class="button-profile" onclick="findFeedback()">Найти отзыв</button>
+        </div>-->
+        <div>
+            <button class="button-profile" id="feedbacks" onclick="myFeedback()">Мои отзывы</button>
+        </div>
+        <div>
+            <button class="button-profile" onclick="exitProfile()">Выйти</button>
+        </div>
+    </div>
+</body>
+</html> 

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="scripts/script.js"></script>
+    <link rel="stylesheet" href="styles/registerStyles.css" type="text/css">
+</head>
+<body>
+    <h1>Регистрация</h1>
+    <div>
+        <div class="div-input-register">
+            <div>
+                <input type="email" id="email" placeholder="Электронная почта" required>
+            </div>
+            <div>
+                <input class="input-password-register" type="password" id="password" placeholder="Пароль" required>
+            </div>
+            <div>
+                <input class="input-password-register" type="password" id="repeatPassword" placeholder="Повторите пароль" required>
+            </div>
+        </div>
+        <div class="div-button">
+            <button type="button" onclick="registerNewUser()">Зарегистрироваться</button>
+            <div class="back">
+                <button onclick="javascript:history.back()" type="button">Назад</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

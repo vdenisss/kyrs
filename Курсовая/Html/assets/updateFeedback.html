@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="scripts/script.js" ></script>
+    <script type="text/javascript" src="scripts/createScript.js" ></script>
+    <link rel="stylesheet" href="styles/createStyles.css" type="text/css">
+</head>
+<body onload="dataUpdateFeetback()">
+    <div>
+        <h1>Редактирование</h1>
+    </div>
+    <div class="div-input">
+        <div class="name-input">Имя клиента</div>
+        <input class="input" type="text" id="nameClient" value="" required>
+    </div>
+    <div class="div-input">
+        <div class="name-input">Адрес клиента</div>
+        <button class="address" type="button" id="address" onclick="showWindowUpdate()"></button>
+    </div>
+    <div class="div-input">
+        <div class="name-input">Подъезд</div>
+        <input class="input" type="number" id="entrance" value="" required>
+    </div>
+    <div class="div-input">
+        <div class="name-input">Этаж</div>
+        <input class="input" type="number" id="floor" value="" required>
+    </div>
+    <div class="div-input">
+        <div class="name-input">Домофон</div>
+        <input class="input" type="text" id="doorNumber" value="" required>
+    </div>
+    <div class="div-input">
+        <div class="name-input">Номер квартиры</div>
+        <input class="input" type="number" id="flat" value="" required>
+    </div>
+    <div class="div-input">
+        <div class="name-input">Комментарий</div>
+        <textarea class="comment" type="text" id="comment" required></textarea>
+    </div>
+    <div class="stars">
+        <button id="1" class="star" type="button" onclick="paintStarUpdate(this.id)"><img id="star1" src=""></button>
+        <button id="2" class="star" type="button" onclick="paintStarUpdate(this.id)"><img id="star2" src=""></button>
+        <button id="3" class="star" type="button" onclick="paintStarUpdate(this.id)"><img id="star3" src=""></button>
+        <button id="4" class="star" type="button" onclick="paintStarUpdate(this.id)"><img id="star4" src=""></button>
+        <button id="5" class="star" type="button" onclick="paintStarUpdate(this.id)"><img id="star5" src=""></button>
+    </div>
+    <div class="div-button">
+        <button class="button" type="button" onclick="updateDataFeetBack()">Сохранить</button>
+        <div class="back">
+            <button class="button" onclick="javascript:history.back()" type="button">Назад</button>
+        </div>
+    </div>
+    <div class="font-window-input" id="window">
+        <a href="javascript:closeWindow();" class="a"></a>
+        <div class="window-input">
+            <div class="div-input-window">
+                <div class="div-input">
+                    <div class="name-input">Город</div>
+                        <input class="input" type="city" id="city" value="" required>
+                    </div>
+                <div class="div-input">
+                    <div class="name-input">Улица</div>
+                        <input class="input" type="street" id="street" value="" required>
+                </div>
+                <div class="div-input">
+                    <div class="name-input">Номер дома</div>
+                        <input class="input" type="numberHouse" id="numberHouse" value="" required>
+                </div>
+            </div>
+            <div class="add-button">
+                <button id="addAddress" class="button" type="button" onclick="addAddress()">Добавить</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
